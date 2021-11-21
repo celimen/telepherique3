@@ -20,6 +20,5 @@ let liste_de_textes = [
 basic.forever(function () {
     while (NumeroMessage < liste_de_textes.length) {
         basic.showString("" + (liste_de_textes[NumeroMessage]))
-        basic.showString("" + (NumeroMessage))
     }
 })
