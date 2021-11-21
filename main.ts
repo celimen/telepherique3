@@ -1,5 +1,7 @@
 input.onPinPressed(TouchPin.P0, function () {
-    NumeroMessage += 1
+    if (NumeroMessage <= liste_de_textes.length) {
+        NumeroMessage += 1
+    }
 })
 input.onPinPressed(TouchPin.P2, function () {
     NumeroMessage = 0
@@ -9,9 +11,10 @@ input.onPinPressed(TouchPin.P1, function () {
         NumeroMessage += -1
     }
 })
+let liste_de_textes: string[] = []
 let NumeroMessage = 0
 NumeroMessage = 0
-let liste_de_textes = [
+liste_de_textes = [
 "",
 "a",
 "B",
